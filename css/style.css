@@ -1,0 +1,124 @@
+/* fonte usado na pagina menu */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* comando geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+  
+body{
+    height: 100vh;
+  
+}
+ /* classe mãe do menu lateral */
+nav.menu-lateral{
+    width: 61px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    /* padding: 40px 0 40px 1%; */
+    box-shadow: 1px 0 0 #cfc8c8;
+    border-radius: 0 3px 3px 0;
+    /* mantem a posição fixa do menu lateral evitando a rolagem */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .6s;
+
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+ /* classe responsavél pela expansão do meu  */
+nav.menu-lateral.expandir{
+    border-radius: 0 10px 10px 0;
+    width: 280px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding: 0 7px 0 7px;
+}
+
+.btn-expandir > i{
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+/* responsavel pela trasição do efeito Hover a baixo */
+ul li.item-menu{
+    
+    transition: .4s;
+}
+
+ul li.ativo{
+    border-radius: 0 3px 3px 0;
+    background-color: #5c85ff;
+}
+
+/* responsavel pela cor azul apresentada quando passa o mouse */
+ul li.item-menu:hover{
+    border-radius: 0 3px 3px 0;
+    background-color: royalblue;
+}
+
+ul li.item-menu a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .6s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon >i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+                    /* Home */
+
+.conteudo {
+    transition: margin-left 0.6s;
+}
+
+.conteudo-expandir {
+    margin-left: 300px; /* Largura do menu lateral expandido */
+}
+

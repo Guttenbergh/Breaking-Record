@@ -1,0 +1,22 @@
+.map-container {
+    
+    margin: -125px 0 0 62px;
+    position: relative;
+    width: 97%;
+    height: 110vh; /* Ajuste a altura conforme necessário */
+}
+.map-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.conteudo {
+    transition: margin-left 0.6s;
+}
+
+.conteudo-expandir {
+    margin-left: 300px; /* Largura do menu lateral expandido */
+}
